@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -14,7 +15,7 @@ public class Villager : MonoBehaviour
 
     protected Vector2 destination;
     Vector2 movement;
-    float speed = 3;
+    protected float speed = 3;
 
     void Start()
     {
@@ -77,6 +78,9 @@ public class Villager : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && isSelected)
         {
             Attack();
+
+            
+            
         }
     }
 
