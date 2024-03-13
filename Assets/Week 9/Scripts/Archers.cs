@@ -7,6 +7,11 @@ public class Archers : Villager
     public GameObject arrowPrefab;
     public Transform spawnPoint;
 
+    public override ChestType CanOpen()
+    {
+        return ChestType.Archer;
+
+    }
 
     protected override void Attack()
     {
