@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -59,12 +58,13 @@ public class Villager : MonoBehaviour
         if (movement.magnitude < 0.1)
         {
             movement = Vector2.zero;
+            speed = 3;
         }
 
         rb.MovePosition(rb.position + movement.normalized * speed * Time.deltaTime);
     }
 
-    void Update()
+    protected virtual void Update()
     {
         //left click: move to the click location
         if (Input.GetMouseButtonDown(0) && isSelected && !clickingOnSelf)
@@ -78,9 +78,6 @@ public class Villager : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && isSelected)
         {
             Attack();
-
-            
-            
         }
     }
 
@@ -93,5 +90,4 @@ public class Villager : MonoBehaviour
     {
         return ChestType.Villager;
     }
-
 }
