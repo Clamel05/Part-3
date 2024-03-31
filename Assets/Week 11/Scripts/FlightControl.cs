@@ -17,7 +17,7 @@ public class FlightControl : MonoBehaviour
 
     IEnumerator MoveMissile()
     {
-        StartCoroutine(MoveForwards());
+        //StartCoroutine(MoveForwards());
         yield return null;
     }
 
