@@ -27,34 +27,45 @@ public class ThePlayer : MonoBehaviour
         //horizontal = Input.GetAxis("Horizontal");
         //vertical = Input.GetAxis("Verical");
 
-        Vector3 HorDirection = new Vector3(2, distance, 0);
+        Vector3 HorDirection = new Vector3(distance, 0, 0);
         Vector3 VertDirection = new Vector3(0, distance, 0);
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            //if(transform.position>) :( if transform is within the boundary.
-            transform.position = transform.position - VertDirection;
+            if(transform.position.y >= -7)
+            {
+                transform.position = transform.position - VertDirection;
+            }
+            
         }
 
 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-
-            transform.position = transform.position + VertDirection;
+            if (transform.position.y <= 7)
+            {
+                transform.position = transform.position + VertDirection;
+            }
         }
 
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
-
-            transform.position = transform.position - HorDirection;
+            if (transform.position.x >= -7)
+            {
+                transform.position = transform.position - HorDirection;
+            }
+                
         }
 
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
-            
-            transform.position = transform.position + HorDirection;
+            if (transform.position.x <= 7)
+            {
+                transform.position = transform.position + HorDirection;
+            }
+                
         }
 
 
