@@ -10,8 +10,7 @@ public class ThePlayer : MonoBehaviour
     public float distance = 2;
 
 
-    Vector3 LowBoundary = new Vector3(-9, -9, 0);
-    Vector3 HighBoundary = new Vector3(9, -9, 0);
+
 
     // Start is called before the first frame update
     void Start()
