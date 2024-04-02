@@ -25,18 +25,62 @@ public class HorSquare : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             transform.position = transform.position - HorDirection;
-
             if (transform.position.x <= -7)
             {
                 distance *= -1;
             }
-
-            if (transform.position.x >= 8)
+            if (transform.position.x >= 7)
             {
-                distance *= 1;
+                distance *= -1;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.UpArrow)) // Using | as OR doesn't work with trans.pos and I don't know another way to connect them as an OR so I'm doing it like this
+        {
+            transform.position = transform.position - HorDirection;
+            if (transform.position.x <= -7)
+            {
+                distance *= -1;
+            }
+            if (transform.position.x >= 7)
+            {
+                distance *= -1;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            transform.position = transform.position - HorDirection;
+            if (transform.position.x <= -7)
+            {
+                distance *= -1;
+            }
+            if (transform.position.x >= 7)
+            {
+                distance *= -1;
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            transform.position = transform.position - HorDirection;
+            if (transform.position.x <= -7)
+            {
+                distance *= -1;
+            }
+            if (transform.position.x >= 7)
+            {
+                distance *= -1;
+            }
+        }
+
+
+
+
+
+
+
         //static on all horizontal squares to reset game. Create death counter UI which increases for each reset.
-        
+
     }
 }

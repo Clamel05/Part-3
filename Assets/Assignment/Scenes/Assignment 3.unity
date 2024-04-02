@@ -1701,6 +1701,7 @@ GameObject:
   - component: {fileID: 859142792}
   - component: {fileID: 859142791}
   - component: {fileID: 859142790}
+  - component: {fileID: 859142793}
   m_Layer: 0
   m_Name: Enemy - Square - H
   m_TagString: Untagged
@@ -1803,6 +1804,19 @@ Transform:
   - {fileID: 33854321}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859142793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859142789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 2
 --- !u!1 &893366621
 GameObject:
   m_ObjectHideFlags: 0
