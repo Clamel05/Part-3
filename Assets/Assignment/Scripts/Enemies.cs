@@ -14,5 +14,8 @@ public class Enemies : MonoBehaviour
     void Update()
     {
         
+        //Inheritance overide: create simple movement which can be overwritten by the individual enemy scripts
+
+
     }
 }
