@@ -82,8 +82,6 @@ public class HorSquare : Enemies
     }
     protected override void hit()
     {
-        Debug.Log("HitStart");
         base.hit();
-        Debug.Log("EndHit");
     }
 }
