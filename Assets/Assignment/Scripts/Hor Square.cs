@@ -4,14 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class HorSquare : Enemies
+public class HorSquare : MonoBehaviour
 {
     Rigidbody2D rb;
     public float distance = 2; //distance that the object moves
-    //int reverse = r.Next(-1,1);
-
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -20,15 +16,11 @@ public class HorSquare : Enemies
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() 
     {
         Vector3 HorDirection = new Vector3(distance, 0, 0);
         Vector3 LowBoundaryX = new Vector3(-9, 0, 0);
         Vector3 HighBoundaryX = new Vector3(9, 0, 0);
-
-        
-
-
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -38,7 +30,6 @@ public class HorSquare : Enemies
                 distance *= -1;
             }
             if (transform.position.x >= 7)
-
             {
                 distance *= -1;
             }
@@ -83,19 +74,13 @@ public class HorSquare : Enemies
             }
         }
 
-        hit();
+
+
+
+
+
+
+        //static on all horizontal squares to reset game. Create death counter UI which increases for each reset.
+
     }
-
-
-    protected override void hit()
-    {
-        Debug.Log("HitStart");
-        base.hit();
-        Debug.Log("EndHit");
-    }
-
-
-    //static on all horizontal squares to reset game. Create death counter UI which increases for each reset.
-
-
 }
