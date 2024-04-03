@@ -23,6 +23,7 @@ public class ThePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(Enemies.collide);
         //horizontal = Input.GetAxis("Horizontal");
         //vertical = Input.GetAxis("Verical");
 
