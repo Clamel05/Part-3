@@ -95,7 +95,7 @@ public class HorSquare : Enemies
     }
 
 
-    //static on all horizontal squares to reset game. Create death counter UI which increases for each death.
+    //static on all horizontal squares to reset game. Create death counter UI which increases for each reset.
 
 
 }
