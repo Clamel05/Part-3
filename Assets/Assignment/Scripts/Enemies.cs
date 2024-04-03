@@ -23,8 +23,6 @@ public class Enemies : MonoBehaviour
     {
         if (collide == true)
         {
-
-            Debug.Log("Collide");
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
@@ -39,8 +37,5 @@ public class Enemies : MonoBehaviour
 
         collide = false;
     }
-
-
-
 
 }

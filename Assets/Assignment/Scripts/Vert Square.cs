@@ -22,8 +22,6 @@ public class VertSquare : Enemies
         hit();
 
         Vector3 VertDirection = new Vector3(0, distance, 0);
-        Vector3 LowBoundaryX = new Vector3(0, -9, 0);
-        Vector3 HighBoundaryX = new Vector3(0, 9, 0);
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
@@ -82,8 +80,6 @@ public class VertSquare : Enemies
     }
     protected override void hit()
     {
-        Debug.Log("HitStart");
         base.hit();
-        Debug.Log("EndHit");
     }
 }

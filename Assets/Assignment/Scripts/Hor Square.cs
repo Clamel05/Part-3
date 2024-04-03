@@ -22,8 +22,6 @@ public class HorSquare : Enemies
         hit();
 
         Vector3 HorDirection = new Vector3(distance, 0, 0);
-        Vector3 LowBoundaryX = new Vector3(-9, 0, 0);
-        Vector3 HighBoundaryX = new Vector3(9, 0, 0);
 
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
