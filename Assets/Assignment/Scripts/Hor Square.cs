@@ -10,6 +10,8 @@ public class HorSquare : Enemies
     public float distance = 2; //distance that the object moves
     public float MoveDelay = 0.5f;
 
+    public static float score;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class HorSquare : Enemies
     // Update is called once per frame
     void Update() 
     {
+
 
         hit();
 
@@ -47,7 +50,6 @@ public class HorSquare : Enemies
             StartCoroutine(MoveDelayX());
         }
 
-        //static on all horizontal squares to reset game. Create death counter UI which increases for each death.
 
     }
 
@@ -67,7 +69,16 @@ public class HorSquare : Enemies
     }
 
 
+    public static void Scorenew(bool score2)
+    {
+        int death = 0;
+        if(score2 == true)
+        {
+            death++;
+            Debug.Log(death);
+        }
 
+    }
 
 
 

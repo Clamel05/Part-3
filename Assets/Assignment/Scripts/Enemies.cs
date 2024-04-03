@@ -11,31 +11,31 @@ public class Enemies : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        //HorSquare.score;
     }
 
     private void Update()
     {
         hit();
+
     }
 
-    protected virtual void hit()
+    protected virtual void hit()//Inheritance gives the hit function to the two enemy squares
     {
         if (collide == true)
         {
+            collide = false;
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
+
+            HorSquare.Scorenew(true);
         }
+        
     }
     void OnTriggerEnter2D(Collider2D Collision)
     {
         collide = true;
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-
-        collide = false;
     }
 
 }
