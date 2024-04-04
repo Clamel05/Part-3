@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 public class VertSquare : Enemies
 {
     Rigidbody2D rb;
+    
     public float distance = 2; //distance that the object moves
     public float MoveDelay = 0.5f;
 
@@ -14,6 +15,7 @@ public class VertSquare : Enemies
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        distance = HorSquare.distance;//Static variable calls distance from HorSquare and sets it to distance in this script.
     }
 
     // Update is called once per frame

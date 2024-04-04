@@ -7,15 +7,17 @@ using UnityEngine.UIElements;
 public class HorSquare : Enemies
 {
     Rigidbody2D rb;
-    public float distance = 2; //distance that the object moves
+    public static float distance = 2; //distance that the object moves
     public float MoveDelay = 0.5f;
 
     public static float score;
+    public GameObject GB;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        GB = GetComponent<GameObject>();   
         
     }
 
@@ -69,14 +71,10 @@ public class HorSquare : Enemies
     }
 
 
-    public static void Scorenew(bool score2)
+    public static void Scorenew(Enemies enemy)//Static destroys enemies when the player is hit by an enemy.
     {
-        int death = 0;
-        if(score2 == true)
-        {
-            death++;
-            Debug.Log(death);
-        }
+
+        Destroy(enemy); 
 
     }
 

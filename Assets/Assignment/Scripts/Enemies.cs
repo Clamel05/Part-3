@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class Enemies : MonoBehaviour
 {
     public static bool collide;
-
+    public Enemies enemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        //HorSquare.score;
+
     }
 
     private void Update()
@@ -26,10 +26,11 @@ public class Enemies : MonoBehaviour
         {
             collide = false;
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            int nextSceneIndex = (currentSceneIndex + 1) % SceneManager.sceneCountInBuildSettings;
+            SceneManager.LoadScene(nextSceneIndex);
 
 
-            HorSquare.Scorenew(true);
+            HorSquare.Scorenew(enemy);//part of the static in HorSquare script
         }
         
     }
