@@ -671,8 +671,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 355980669}
 --- !u!50 &355980672
 Rigidbody2D:
   serializedVersion: 4
@@ -1512,8 +1513,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 736375398}
 --- !u!50 &736375401
 Rigidbody2D:
   serializedVersion: 4
@@ -1725,6 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214e4c758284d8489a5fef710ecb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   distance: 2
   MoveDelay: 0.5
 --- !u!50 &784637790
@@ -2186,6 +2189,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214e4c758284d8489a5fef710ecb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   distance: 2
   MoveDelay: 0.5
 --- !u!50 &857718585
@@ -2455,8 +2459,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 859142789}
 --- !u!61 &859142794
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2881,6 +2886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214e4c758284d8489a5fef710ecb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   distance: 2
   MoveDelay: 0.5
 --- !u!61 &1032433758
@@ -3173,8 +3179,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 1114337121}
 --- !u!50 &1114337124
 Rigidbody2D:
   serializedVersion: 4
@@ -3431,8 +3438,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 1205309767}
 --- !u!50 &1205309770
 Rigidbody2D:
   serializedVersion: 4
@@ -3812,6 +3820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214e4c758284d8489a5fef710ecb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   distance: 2
   MoveDelay: 0.5
 --- !u!50 &1392046068
@@ -4031,8 +4040,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 1428561138}
 --- !u!50 &1428561141
 Rigidbody2D:
   serializedVersion: 4
@@ -4289,8 +4299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0c5040055a1b7246999e0945a20142a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distance: 2
+  enemy: {fileID: 0}
   MoveDelay: 0.5
+  GB: {fileID: 1495123817}
 --- !u!50 &1495123820
 Rigidbody2D:
   serializedVersion: 4
@@ -4586,6 +4597,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9214e4c758284d8489a5fef710ecb9bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
   distance: 2
   MoveDelay: 0.5
 --- !u!50 &1627903976
